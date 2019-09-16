@@ -2,11 +2,11 @@ import React from 'react';
 import { render } from '@testing-library/react';
 import renderer from 'react-test-renderer';
 import Dashboard from './Dashboard';
-import { isMainThread } from 'worker_threads';
+
 
 
 describe('<Dashboard />', () => {
-    isMainThread('matches snapshot', () => {
+    it('matches snapshot', () => {
         const tree = renderer.create(<Dashboard />);
 
         expect(tree.toJSON()).toMatchSnapshot();
