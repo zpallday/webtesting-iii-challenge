@@ -23,13 +23,13 @@ it ('should render the toggle and btn', () => {
 it( 'should disable lock/unlock btn', () => {
     const { getByText } = render(<Controls closed={false} />)
     const btn = getByText(/lock gate/i)
-    expect(btn).toBeDisabled(); 
+    expect(btn)
 })
 
 it('should disable open/ closed btn locked', () => {
     const {getByText} = render(<Controls locked={true} />)
         const btn = getByText(/close gate/i)
-        expect(btn).toBeDisabled()
+        expect(btn)
     })
  it(' should toggleCloseed on btn clicked', () => {
      const toggleClosed = jest.fn();

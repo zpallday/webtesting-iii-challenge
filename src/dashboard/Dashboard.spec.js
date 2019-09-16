@@ -17,7 +17,7 @@ describe('<Dashboard />', () => {
         getByText(/unlocked/i)
         getByText(/lock gate/i)
         getByText(/open/i)
-        getByText(/closed gate/i)
+        getByText(/close gate/i)
 
     })
 })
